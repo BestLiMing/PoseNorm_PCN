@@ -1,0 +1,33 @@
+base_param:
+  num_parts: 14
+  num_points: 10000
+  epochs: 500
+  device: cuda
+  num_workers: 10
+  batch_size: 10
+  lr: 0.001
+  optimizer: Adam
+  out_path: results
+
+PoseCorr:
+  train:
+    data_type: single
+    part_weighting: False
+    exp_suffix:
+  eval:
+    data_type: single # single or full
+    part_weighting: True # True or False
+    exp_suffix:
+
+BackGeo:
+  train:
+    part_weighting: True # True or False
+    exp_suffix:
+  eval:
+    part_weighting: True # True or False
+    exp_suffix:
+
+pipeline:
+  PoseCorr_part_weighting: True
+  BackGeo_part_weighting: True
+  exp_suffix:

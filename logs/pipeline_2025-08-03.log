@@ -1,0 +1,131 @@
+2025-08-03 10:53:24,639 - INFO - PID:26352 - pipeline - Pipeline.py:87 - Start reconstruction pipeline[0m
+2025-08-03 10:53:24,639 - INFO - PID:26352 - pipeline - Pipeline.py:89 - Get input, gender: male, file: H:\W-Paper-1in3-2025-BackGeo\BackGeo\data\tpose_corr_single\00032_shortshort_chicken_wings.000076.npz[0m
+2025-08-03 10:53:24,639 - CRITICAL - PID:26352 - pipeline - LoggerConfig.py:107 - uncaught exception[0m
+Traceback (most recent call last):
+  File "H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\Pipeline.py", line 167, in <module>
+    pipeline(scan_file=scan_file, gender=gender, save=True,
+  File "H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\Pipeline.py", line 95, in pipeline
+    inputs_dict = get_input(scan_file)
+  File "H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\Pipeline.py", line 41, in get_input
+    assert exists(file), "The scanned file does not exist."
+AssertionError: The scanned file does not exist.
+2025-08-03 10:54:15,489 - INFO - PID:17452 - pipeline - Pipeline.py:87 - Start reconstruction pipeline[0m
+2025-08-03 10:54:15,489 - INFO - PID:17452 - pipeline - Pipeline.py:89 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm-PCN\data\tpose_corr_single\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 10:54:15,501 - INFO - PID:17452 - pipeline - Pipeline.py:126 - Start PoseCorr, part weighting: True[0m
+2025-08-03 10:54:15,501 - CRITICAL - PID:17452 - pipeline - LoggerConfig.py:107 - uncaught exception[0m
+Traceback (most recent call last):
+  File "H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\Pipeline.py", line 167, in <module>
+    pipeline(scan_file=scan_file, gender=gender, save=True,
+  File "H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\Pipeline.py", line 127, in pipeline
+    tpose_scan_points_np, _, tpose_scan_colors_np, PoseCorr_time_consumption = PoseCorr.PoseCorr_inference(
+  File "H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\eval\PoseCorr.py", line 40, in PoseCorr_inference
+    assert exists(checkpoint_path), f"Checkpoint file does not exist: {checkpoint_path}"
+AssertionError: Checkpoint file does not exist: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\experiments\PoseCorr_single_weighting\checkpoints\best_checkpoint.pt
+2025-08-03 10:55:26,573 - INFO - PID:24776 - pipeline - Pipeline.py:87 - Start reconstruction pipeline[0m
+2025-08-03 10:55:26,573 - INFO - PID:24776 - pipeline - Pipeline.py:89 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm-PCN\data\tpose_corr_single\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 10:55:26,579 - INFO - PID:24776 - pipeline - Pipeline.py:126 - Start PoseCorr, part weighting: True[0m
+2025-08-03 10:55:27,778 - INFO - PID:24776 - pipeline - Pipeline.py:134 - Start BackGeo, part weighting: False[0m
+2025-08-03 10:55:28,254 - INFO - PID:24776 - pipeline - Pipeline.py:155 - Pipeline execution completed.
+PoseCorr-Net time: 0.74s,
+BackGeo-Net time: 0.06s,
+pipeline time: 1.67s[0m
+2025-08-03 10:59:46,659 - INFO - PID:19440 - pipeline - Pipeline.py:88 - Start reconstruction pipeline[0m
+2025-08-03 10:59:46,660 - INFO - PID:19440 - pipeline - Pipeline.py:90 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 10:59:46,675 - INFO - PID:19440 - pipeline - Pipeline.py:127 - Start PoseCorr, part weighting: True[0m
+2025-08-03 10:59:47,686 - INFO - PID:19440 - pipeline - Pipeline.py:135 - Start BackGeo, part weighting: False[0m
+2025-08-03 10:59:48,162 - INFO - PID:19440 - pipeline - Pipeline.py:156 - Pipeline execution completed.
+PoseCorr-Net time: 0.22s,
+BackGeo-Net time: 0.07s,
+pipeline time: 1.49s[0m
+2025-08-03 11:01:18,970 - INFO - PID:196 - pipeline - Pipeline.py:88 - Start reconstruction pipeline[0m
+2025-08-03 11:01:18,970 - INFO - PID:196 - pipeline - Pipeline.py:90 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:01:18,997 - INFO - PID:196 - pipeline - Pipeline.py:127 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:01:19,925 - INFO - PID:196 - pipeline - Pipeline.py:135 - Start BackGeo, part weighting: False[0m
+2025-08-03 11:01:20,342 - INFO - PID:196 - pipeline - Pipeline.py:152 - Pipeline execution completed.
+PoseCorr-Net time: 0.22s,
+BackGeo-Net time: 0.06s,
+pipeline time: 1.35s[0m
+2025-08-03 11:06:19,943 - INFO - PID:3156 - pipeline - Pipeline.py:88 - Start reconstruction pipeline[0m
+2025-08-03 11:06:19,943 - INFO - PID:3156 - pipeline - Pipeline.py:90 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:06:19,971 - INFO - PID:3156 - pipeline - Pipeline.py:126 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:06:20,441 - INFO - PID:3156 - pipeline - Pipeline.py:134 - Start BackGeo, part weighting: False[0m
+2025-08-03 11:06:20,861 - INFO - PID:3156 - pipeline - Pipeline.py:151 - Pipeline execution completed.
+PoseCorr-Net time: 0.23s,
+BackGeo-Net time: 0.06s,
+pipeline time: 0.89s[0m
+2025-08-03 11:08:31,550 - INFO - PID:24032 - pipeline - Pipeline.py:88 - Start reconstruction pipeline[0m
+2025-08-03 11:08:31,550 - INFO - PID:24032 - pipeline - Pipeline.py:90 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:08:31,576 - INFO - PID:24032 - pipeline - Pipeline.py:126 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:08:32,040 - INFO - PID:24032 - pipeline - Pipeline.py:134 - Start BackGeo, part weighting: False[0m
+2025-08-03 11:08:32,456 - INFO - PID:24032 - pipeline - Pipeline.py:151 - Pipeline execution completed.
+PoseCorr-Net time: 0.23s,
+BackGeo-Net time: 0.06s,
+pipeline time: 0.88s[0m
+2025-08-03 11:10:11,881 - INFO - PID:21176 - pipeline - Pipeline.py:88 - Start reconstruction pipeline[0m
+2025-08-03 11:10:11,882 - INFO - PID:21176 - pipeline - Pipeline.py:90 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:10:11,898 - INFO - PID:21176 - pipeline - Pipeline.py:126 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:10:12,352 - INFO - PID:21176 - pipeline - Pipeline.py:134 - Start BackGeo, part weighting: True[0m
+2025-08-03 11:10:12,772 - INFO - PID:21176 - pipeline - Pipeline.py:151 - Pipeline execution completed.
+PoseCorr-Net time: 0.22s,
+BackGeo-Net time: 0.06s,
+pipeline time: 0.87s[0m
+2025-08-03 11:11:05,367 - INFO - PID:25860 - pipeline - Pipeline.py:88 - Start reconstruction pipeline[0m
+2025-08-03 11:11:05,367 - INFO - PID:25860 - pipeline - Pipeline.py:90 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:11:05,394 - INFO - PID:25860 - pipeline - Pipeline.py:126 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:11:05,848 - INFO - PID:25860 - pipeline - Pipeline.py:134 - Start BackGeo, part weighting: False[0m
+2025-08-03 11:11:06,252 - INFO - PID:25860 - pipeline - Pipeline.py:151 - Pipeline execution completed.
+PoseCorr-Net time: 0.22s,
+BackGeo-Net time: 0.06s,
+pipeline time: 0.86s[0m
+2025-08-03 11:13:32,678 - INFO - PID:24308 - pipeline - Pipeline.py:89 - Start reconstruction pipeline[0m
+2025-08-03 11:13:32,678 - INFO - PID:24308 - pipeline - Pipeline.py:91 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:13:32,704 - INFO - PID:24308 - pipeline - Pipeline.py:127 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:13:33,168 - INFO - PID:24308 - pipeline - Pipeline.py:135 - Start BackGeo, part weighting: True[0m
+2025-08-03 11:13:33,572 - INFO - PID:24308 - pipeline - Pipeline.py:152 - Pipeline execution completed.
+PoseCorr-Net time: 0.22s,
+BackGeo-Net time: 0.06s,
+pipeline time: 0.87s[0m
+2025-08-03 11:49:07,580 - CRITICAL - PID:24436 - pipeline - LoggerConfig.py:107 - uncaught exception[0m
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\IHR\lib\argparse.py", line 1437, in add_argument
+    self._get_formatter()._format_args(action, None)
+  File "D:\Anaconda3\envs\IHR\lib\argparse.py", line 592, in _format_args
+    get_metavar = self._metavar_formatter(action, default_metavar)
+  File "D:\Anaconda3\envs\IHR\lib\argparse.py", line 579, in _metavar_formatter
+    choice_strs = [str(choice) for choice in action.choices]
+  File "D:\Anaconda3\envs\IHR\lib\argparse.py", line 579, in <listcomp>
+    choice_strs = [str(choice) for choice in action.choices]
+  File "D:\Anaconda3\envs\IHR\lib\typing.py", line 277, in inner
+    return func(*args, **kwds)
+  File "D:\Anaconda3\envs\IHR\lib\typing.py", line 767, in __getitem__
+    params = tuple(_type_check(p, msg) for p in params)
+  File "D:\Anaconda3\envs\IHR\lib\typing.py", line 767, in <genexpr>
+    params = tuple(_type_check(p, msg) for p in params)
+  File "D:\Anaconda3\envs\IHR\lib\typing.py", line 166, in _type_check
+    raise TypeError(f"{msg} Got {arg!r:.100}.")
+TypeError: Parameters to generic types must be types. Got 0.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\Pipeline.py", line 176, in <module>
+    parser.add_argument('--gender', '--g', type=str, choices=Literal['male', 'female'], required=True, help="gender")
+  File "D:\Anaconda3\envs\IHR\lib\argparse.py", line 1439, in add_argument
+    raise ValueError("length of metavar tuple does not match nargs")
+ValueError: length of metavar tuple does not match nargs
+2025-08-03 11:52:37,923 - INFO - PID:16888 - pipeline - Pipeline.py:100 - Start reconstruction pipeline[0m
+2025-08-03 11:52:37,924 - INFO - PID:16888 - pipeline - Pipeline.py:102 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:52:37,953 - INFO - PID:16888 - pipeline - Pipeline.py:139 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:52:38,421 - INFO - PID:16888 - pipeline - Pipeline.py:147 - Start BackGeo, part weighting: True[0m
+2025-08-03 11:52:40,934 - INFO - PID:16888 - pipeline - Pipeline.py:164 - Pipeline execution completed.
+PoseCorr-Net time: 0.23s,
+BackGeo-Net time: 0.06s,
+pipeline time: 2.98s[0m
+2025-08-03 11:53:57,509 - INFO - PID:26084 - pipeline - Pipeline.py:100 - Start reconstruction pipeline[0m
+2025-08-03 11:53:57,509 - INFO - PID:26084 - pipeline - Pipeline.py:102 - Get input, gender: male, file: H:\UR-Paper-1in3-2025-PoseNorm_PCN\PoseNorm_PCN_GitHub\test_data\00032_longshort_ATUsquat.000001.npz[0m
+2025-08-03 11:53:57,570 - INFO - PID:26084 - pipeline - Pipeline.py:139 - Start PoseCorr, part weighting: True[0m
+2025-08-03 11:53:58,812 - INFO - PID:26084 - pipeline - Pipeline.py:147 - Start BackGeo, part weighting: True[0m
+2025-08-03 11:53:59,189 - INFO - PID:26084 - pipeline - Pipeline.py:164 - Pipeline execution completed.
+PoseCorr-Net time: 0.22s,
+BackGeo-Net time: 0.07s,
+pipeline time: 1.62s[0m
